@@ -1,0 +1,537 @@
+body {
+  background: url(/images/bg.jpg) repeat;
+  margin: 0;
+  padding: 0 !important;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nopadding {
+  padding: 0 !important;
+}
+.nomargin {
+  margin: 0 !important;
+}
+.clear {
+  clear: both;
+}
+header {
+  background: url(/images/header_bg.jpg) repeat-x;
+  background-size: auto 100%;
+  height: 6em;
+  padding-top: 1.5em;
+}
+header .logo img {
+  height: 3em;
+}
+header .loginform input {
+  border-radius: 0;
+  font-size: 1em;
+  height: auto;
+}
+header .loginform .username,
+header .loginform .password {
+  width: 40%;
+  float: left;
+  padding: 0 0.25em;
+}
+header .loginform .btn-login {
+  width: 20%;
+  padding: 0 0.25em;
+  float: left;
+}
+header .loginform label.remember {
+  padding-left: 0.25em;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #8392b6;
+  margin-top: 0.333em;
+}
+header .loginform .forgetpass {
+  margin-top: 0.333em;
+  padding-left: 0;
+}
+header .loginform .forgetpass a {
+  color: #8392b6;
+  font-size: 0.9em;
+}
+header .loginform input.btn {
+  background: #f47b14;
+  border-color: #f47b14;
+  border-radius: 0;
+  font-size: 0.9em;
+  box-shadow: 0 1px #d16407;
+}
+header .loginform input.btn:hover {
+  background: #d16407;
+  border-color: #d16407;
+}
+header .hello {
+  background: #f2f2f2;
+  margin-top: -1em;
+  height: 5.4em;
+  padding-top: 2em;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  position: relative;
+  width: auto;
+  color: #787878;
+}
+header .hello:before {
+  background: none;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -2px;
+  right: -2px;
+  bottom: 0;
+  pointer-events: none;
+}
+header .hello a {
+  color: #787878;
+}
+header .hello a:hover {
+  text-decoration: none;
+  color: #1c508e;
+}
+header .hello .dropdown {
+  height: 1.667em;
+  position: relative;
+}
+header .hello .dropdown:hover #dropdown-menu {
+  display: block;
+}
+header .hello .dropdown #dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  border: 1px solid #cccccc;
+  box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.05);
+  padding: 0.833em 0.833em 0 0.833em;
+  width: 20em;
+  background: white;
+  z-index: 10;
+  text-align: left;
+}
+header .hello .dropdown #dropdown-menu .user-info {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 0.5em;
+  overflow: hidden;
+}
+header .hello .dropdown #dropdown-menu .user-info .avatar {
+  padding: 0;
+}
+header .hello .dropdown #dropdown-menu .user-info .avatar img {
+  width: 100%;
+}
+header .hello .dropdown #dropdown-menu .user-info .user-name {
+  padding-right: 0;
+}
+header .hello .dropdown #dropdown-menu .user-info .user-name p {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+header .hello .dropdown #dropdown-menu .user-info .user-name .email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #4f608a;
+}
+header .hello .dropdown #dropdown-menu .user-info .balance {
+  width: 100%;
+  font-size: 1em;
+  padding-top: 0.5em;
+  margin: 0;
+}
+header .hello .dropdown #dropdown-menu ul.link-list {
+  padding: 0.417em 0.833em 0.833em 0.833em;
+  margin: 0;
+  background: #fbfbfb;
+}
+header .hello .dropdown #dropdown-menu ul.link-list li {
+  border-bottom: 1px dashed #cccccc;
+  padding: 0.5em 0 0.5em 2.1em;
+}
+header .hello .dropdown #dropdown-menu ul.link-list li:last-child {
+  border: none;
+}
+header .hello .dropdown #dropdown-menu .botmenu {
+  background: #f5f5f5;
+  border-top: 1px solid #cccccc;
+  padding: 0.833em;
+}
+header .hello .dropdown #dropdown-menu .botmenu a.btn {
+  font-size: 1em;
+  border-radius: 0;
+}
+main {
+  min-height: 500px;
+}
+main aside.sidebar {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-right: 1px solid #abadaf;
+}
+main aside.sidebar a {
+  color: #4b4b4b;
+}
+main aside.sidebar h3 {
+  font-size: 1.2em;
+  color: black;
+  margin-top: 1em;
+}
+main aside.sidebar ul li {
+  padding-top: 0.167em;
+  padding-bottom: 0.167em;
+  width: 100%;
+}
+main aside.sidebar .avatar {
+  width: 75%;
+  position: relative;
+}
+main aside.sidebar .avatar img.ava {
+  width: 100%;
+  border: 0.417em solid #d8dfea;
+}
+main aside.sidebar .avatar img.edit-ava {
+  position: absolute;
+  bottom: 0.35em;
+  right: 0.41em;
+  z-index: 3;
+  width: 10%;
+}
+main aside.sidebar .edit-info,
+main aside.sidebar .account {
+  border-bottom: 1px solid #e8eaeb;
+  padding-bottom: 0.833em;
+  margin: 0;
+}
+main aside.sidebar .edit-info ul li p,
+main aside.sidebar .account ul li p {
+  margin: 0;
+  padding-left: 2.2em;
+}
+main aside.sidebar .edit-info ul li.active,
+main aside.sidebar .account ul li.active {
+  background: #d8dfea;
+}
+main aside.sidebar .edit-info:last-child,
+main aside.sidebar .account:last-child {
+  border: none;
+}
+main .leftside {
+  padding-top: 1.5em;
+}
+main .leftside form {
+  margin-bottom: 10px;
+}
+main .leftside form a {
+  color: #3b5998;
+}
+main .leftside form input.form-control {
+  border-radius: 0;
+}
+main .leftside form h3.form-title {
+  color: #3b5998;
+  margin-top: 14px;
+  font-size: 1.4em;
+}
+main .leftside form p.slogan {
+  color: #999999;
+  margin-bottom: 24px;
+}
+main .leftside form > .form-group {
+  margin-bottom: 20px;
+}
+main .leftside form label {
+  font-weight: normal;
+}
+main .leftside form .form-submit {
+  margin: 10px auto auto 10px;
+}
+main .leftside form .form-submit input {
+  text-transform: uppercase;
+  background: #6d84b4;
+  box-shadow: 0 2px #4d6495;
+}
+main .leftside form .form-submit input:hover {
+  background: #4d6495;
+}
+main .leftside form .form-submit .email-resend {
+  margin-top: 7px;
+}
+main .leftside section.social {
+  border-top: 1px solid #dbdada;
+  padding: 11px 0;
+}
+main .leftside section.social span {
+  color: #3b5998;
+}
+main .leftside section.social img {
+  margin-left: 8px;
+}
+main .rightside {
+  padding-top: 5em;
+}
+main .rightside .slider {
+  height: auto;
+}
+main .rightside .slider .carousel-inner {
+  width: 100%;
+}
+main .rightside .slider .carousel-inner .item {
+  padding-bottom: 4em;
+}
+main .rightside .slider .carousel-inner .item img {
+  width: 377px;
+  height: 261px;
+  margin: auto;
+}
+main .rightside .slider .carousel-inner .carousel-caption {
+  right: 0;
+  left: 25em;
+  padding: 0;
+  text-align: left;
+}
+main .rightside .slider .carousel-inner .carousel-caption h3 {
+  width: auto;
+  color: #3b5998;
+}
+main .rightside .slider .carousel-inner .carousel-caption p {
+  color: #999999;
+  text-shadow: none;
+  font-size: 0.9em;
+}
+main .rightside .slider .carousel-control {
+  background: none !important;
+  padding-top: 20%;
+}
+main .rightside .slider a.left {
+  left: 0.5em;
+}
+main .rightside .slider a.right {
+  right: 0.5em;
+}
+main .content {
+  padding-top: 0.833em;
+}
+main .content h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+  color: #3b5998;
+  margin: 0 0 0.833em 1.667em;
+  border-bottom: 1px solid #eaebeb;
+  padding-bottom: 0.417em;
+}
+main .content .charge-history {
+  padding: 0 2.143em;
+}
+main .content .charge-history form {
+  padding: 0;
+}
+main .content .charge-history form .form-group {
+  overflow: hidden;
+  float: left;
+}
+main .content .charge-history form .form-group .status {
+  display: none;
+}
+main .content .charge-history form .form-group .status.active {
+  display: block;
+}
+main .content .charge-history .nav-tabs li {
+  border-top: 1px solid #dddcdc;
+  border-left: 1px solid #dddcdc;
+  background: linear-gradient(#fefefe, #d1d1d1);
+}
+main .content .charge-history .nav-tabs li a {
+  border: none;
+  color: #6c6c6c;
+  margin: 0;
+}
+main .content .charge-history .nav-tabs li:last-child {
+  border-right: 1px solid #dddcdc;
+}
+main .content .charge-history .nav-tabs li.active a {
+  color: #f47b14;
+  font-weight: bold;
+}
+main .content .charge-history .tab-content table thead {
+  background: #f47b14;
+  color: #FFFFFF;
+  text-align: center;
+}
+main .content .charge-history .tab-content table tbody {
+  background: #FFFFFF;
+}
+main .content .charge-history .tab-content table tbody tr:nth-child(even) {
+  background: #e6e7e8;
+}
+main .content .panel-group {
+  margin: 0 0 0 2em;
+}
+main .content .panel-group .panel-title a {
+  background: url("/images/collapse_right.png") no-repeat center left;
+  padding-left: 1em;
+}
+main .content .panel-group .panel-title a:hover {
+  text-decoration: none;
+}
+main .content .panel-group .panel-title.active a {
+  background: url("/images/collapse_down.png") no-repeat center left;
+}
+main .content form {
+  padding-left: 3em;
+}
+main .content form .form-control {
+  border-radius: 0;
+  color: #6c6c6c;
+}
+main .content form .day,
+main .content form .mon,
+main .content form .year {
+  width: auto;
+}
+main .content form label {
+  float: left;
+}
+main .content form .form-input {
+  border-bottom: 1px solid #eaebeb;
+  padding-top: 1em;
+}
+main .content form .form-input label {
+  text-align: left !important;
+}
+main .content form .form-input .form-group {
+  overflow: hidden;
+}
+main .content form .form-button {
+  margin-top: 0.9em;
+}
+main .content form .form-button a {
+  margin-top: 0.417em;
+  padding-top: 0.167em !important;
+}
+main .content form .form-button .btn {
+  border-radius: 0;
+}
+main .content form label {
+  font-weight: normal !important;
+  margin-top: 10px;
+  color: #4b4b4b;
+}
+main .content .show-info {
+  padding-left: 3em;
+  padding-top: 1.5em;
+}
+main .content .show-info .account-balance {
+  font-size: 1.3em;
+  margin-bottom: 2em;
+}
+main .terms {
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  background: #f8f8f8;
+}
+main .terms .terms-menu {
+  color: #000000;
+  padding: 0;
+}
+main .terms .terms-menu h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #DDDDDD;
+}
+main .terms .terms-menu ul li {
+  padding: 8px 20px;
+  border-bottom: 1px solid #DDDDDD;
+  position: relative;
+  cursor: pointer;
+}
+main .terms .terms-menu ul li a {
+  color: #000000;
+}
+main .terms .terms-menu ul li a:hover {
+  text-decoration: none;
+}
+main .terms .terms-menu ul li:before {
+  background: none;
+  border-bottom: 1px solid #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  pointer-events: none;
+}
+main .terms .terms-menu ul li.active {
+  background: #ffffff;
+}
+main .terms .terms-menu ul li.active a {
+  color: #3b5998;
+}
+main .terms .terms-content {
+  background: #ffffff;
+  border-left: 1px solid #DDDDDD;
+  min-height: 500px;
+  padding: 15px 20px;
+}
+main .terms .terms-content h3 {
+  margin: 0;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #3b5998;
+  text-transform: uppercase;
+}
+main .terms .terms-content section {
+  padding-top: 20px;
+  color: #6c6c6c;
+}
+footer {
+  height: 6.667em;
+  background: url(/images/footer_bg.jpg) repeat-x;
+  background-size: auto 100%;
+  border-top: 3px solid #d0d5d7;
+  overflow: hidden;
+  padding-top: 0 ;
+}
+footer .contact {
+  padding-top: 10px;
+}
+footer .contact p {
+  color: white;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+footer .contact a {
+  color: white;
+}
+footer .contact a:hover {
+  text-decoration: none;
+}
+footer ul {
+  padding-top: 2.5em;
+  clear: right;
+}
+footer ul li {
+  margin-left: 0.417em;
+}
+footer ul li a {
+  color: white;
+}
+.chart_wrapper{background: #FFFFFF;margin: 0 auto;}
+.chart_left{width:180px;padding-top: 55px;float: left;background: #FFFFFF;padding-left: 20px;font-family: Arial;}
+.chart_right{height:100%;;float: left;}
